@@ -1,0 +1,119 @@
+[
+    // basic ctor of "User"
+    // {
+    //     "username": "username",
+    //     "email": "email",
+    //     "details": { 
+        //    "fname": "fname",
+        //     "lname": "lname",
+        //     "selected": "false",
+        //     "id": 123456789,
+        //     "passport": 888,
+        //     "role": ["Manager", "Administrator"],
+        //     "hasRole": "true",
+        //     "isActive": "false"
+        // }
+    // },
+    {
+        "username": "Donald",
+        "email": "donaldduck@acme.co",
+        "details": {
+            "fname": "donald",
+            "lname": "duck",
+            "selected": "false",
+            "id": 123456789,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    },
+    {
+        "username": "Mickey",
+        "email": "mickey@acme.co",
+        "details": {
+            "fname": "mickey",
+            "lname": "mouse",
+            "selected": "false",
+            "id": 123123123,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    },
+    {
+        "username": "Bugs",
+        "email": "bugs@acme.co",
+        "details": {
+            "fname": "bugs",
+            "lname": "bunny",
+            "selected": "false",
+            "id": 123412341,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    },
+    {
+        "username": "Superman",
+        "email": "clark@dc.co",
+        "details": {
+            "fname": "clark",
+            "lname": "kent",
+            "selected": "true",
+            "id": 999999999,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    },
+    {
+        "username": "Spiderman",
+        "email": "spidey@dc.co",
+        "details": {
+            "fname": "peter",
+            "lname": "parker",
+            "selected": "false",
+            "id": 345678912,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    },
+    {
+        "username": "WonderWoman",
+        "email": "galgadot@wonderwoman.co",
+        "details": {
+            "fname": "gal",
+            "lname": "gadot",
+            "selected": "false",
+            "id": 456789123,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    }
+]

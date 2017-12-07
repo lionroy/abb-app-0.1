@@ -1,0 +1,87 @@
+<div class="container-fluid">
+
+    <h1>My
+        <strong>wonderful</strong> Profile Template</h1> | User: {{clientId}}
+    <hr>
+    <div class="row">
+
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+
+            <h3>Profile details</h3><hr>
+            {{ o.email }} | as unique identifier
+            <br/> {{ o.username }}
+            <br/> {{ o.fname }}
+            <br/> {{ o.lname }}
+            <br/> details: {{ o.lname }}
+            <br/> {{ o.selected }}
+            <br/> {{ o.myUrl }}
+            <br/> {{ o.pUrl }}
+            <br/> {{ o.title + ' a commoner'}}
+            <br/> Math: {{8 + 8}}
+
+        </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+
+            <!-- <h3>Profile Editor</h3> -->
+            
+            <form action="" method="POST" role="profile_form">
+                <legend>Profile Form</legend>
+            
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="tb_username" ng-model="username" placeholder="Username Input">
+                </div>
+            
+                <div class="form-group">
+                    <label for="fname">Name</label>
+                    <input type="text" class="form-control" id="tb_fname" ng-model="fname" placeholder="Name Input">
+                </div>
+
+                <div class="form-group">
+                    <label for="fname">Surname</label>
+                    <input type="text" class="form-control" id="tb_lname" ng-model="lname" placeholder="Name Input">
+                </div>
+            
+                <div class="form-group" disabled>
+                    <label for="myUrl">My Url</label>
+                    <input type="myUrl" class="form-control" id="tb_myUrl" ng-model="myUrl" placeholder="myUrl Input">
+                </div>
+            
+                <div class="form-group" disabled>
+                    <label for="pUrl">profile_img</label>
+                    <input type="url" class="form-control" id="tb_pUrl" ng-model="pUrl" placeholder="pUrl Input">
+                </div>
+            
+                <div class="form-group" disabled>
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="tb_title" ng-model="title" placeholder="Title Input">
+                </div>
+            
+                
+                
+            
+                <button type="button" class="btn btn-primary">Submit</button>
+            </form>
+            
+            <!-- {{ o.email }} | as unique identifier
+            <br/> {{ o.username }}
+            <br/> {{ o.fname }}
+            <br/> {{ o.lname }}
+            <br/> details: {{ o.lname }}
+            <br/> {{ o.selected }}
+            <br/> {{ o.myUrl }}
+            <br/> {{ o.pUrl }}
+            <br/> {{ o.title + ' a commoner'}}
+            <br/> Math: {{8 + 8}}
+
+        </div> -->
+        <!-- 
+                {{o.details.details.fname}}
+                {{o.username}}
+                
+                o.details.get().fname -->
+    </div>
+</div>

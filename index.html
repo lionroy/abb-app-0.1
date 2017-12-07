@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="practico">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Roy Leon | Abstruct Studio "></meta:author>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.7/angular-sanitize.js"></script>
+    
+    <!-- App files -->
+    <script src="app.js"></script>
+
+    <!-- home controllers -->
+    <script src="testCtrl.js"></script>
+    <script src="./pages/home/homeCtrl.js"></script>
+
+    <!-- directed controllers -->
+    <!-- admin controllers -->
+    <script src="./admin/users/usersCtrl.js"></script>
+    <script src="./admin/users/user.js"></script>
+    <script src="./admin/users/users.js"></script>
+    <script src="./admin/pages/clientservice.js"></script>
+    <script src="./admin/pages/clientCtrl.js"></script>
+
+    <!-- model code -->
+    <!-- controllers reg -->
+    <script src="./pages/home/navCtrl.js"></script>
+    <script src="./pages/home/loginCtrl.js"></script>
+    <script src="./pages/main/mainCtrl.js"></script>
+    <script src="./pages/profile/profileCtrl.js"></script>
+    <script src="./pages/profile/profile.js"></script>
+    <script src="./pages/tasks/tasksCtrl.js"></script>
+    <script src="./pages/tasks/task.js"></script>
+    <script src="./pages/tasks/tasks.js"></script>
+    <script src="./pages/cards/cardsGenCtrl.js"></script>
+    <script src="./pages/cards/myCard.js"></script>
+
+    <!-- services -->
+    <script src="./services/activeUser.js"></script>
+
+
+    <script src="./pages/cards/directives/prob1Directive.js"></script>
+    <script src="./pages/cards/directives/prob2Directive.js"></script>
+    <script src="./pages/cards/directives/prob6Directive.js"></script>
+
+    <!-- <script src="./model/friends.js"></script> -->
+
+
+    <!-- <script src="./services/usersService.js"></script> -->
+    <!-- <script src="./controllers/addUserCtrl.js"></script> -->
+    <!-- <script src="./controllers/addTaskCtrl.js"></script> -->
+
+
+    <title>NG WORKSHOP APP</title>
+</head>
+
+<body>
+    <!-- home: {{ 9 + 9 }} -->
+
+    <!-- tests only -->
+    <!--     
+        <button ng-model="count" ng-click="" ng-init="count=0">
+            Increment
+        </button>
+        <span>
+            count: {{count}}
+        </span>
+        <ng-view></ng-view>
+        {{ test }}
+    -->
+    <!-- testing the controllers -->
+    <span ng-controller="testCtrl as demo">
+        Client ID: {{demo.clientId}}
+    </span>
+
+    <!-- 'real' code -->
+    <!-- Generated nav stuff-->
+    <nav class="navbar navbar-default" role="navigation" ng-controller="navCtrl">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#!/home">ABB Studio</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#!/users">Users</a>
+                </li>
+                <li>
+                    <a href="#!/tasks">Tasks</a>
+                </li>
+                <li>
+                    <a href="#!/myCards">New Card</a>
+                </li>
+                <li>
+                    <a href="#!/">Gallery</a>
+                </li>
+            </ul>
+
+            <!--
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="text" class="btn btn-default">Search</button>
+            </form> 
+            -->
+
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li>
+                    <a href="#!/profile">My Profile</a>
+                </li> -->
+                <li>
+                    <a href="javascript:void(0)" ng-click="login()">Login</a>
+                </li>
+                <li>
+                    <a href="#!/home">Logout</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret glyphicon glyphicon-caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#!/profile">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#!/tasks">Tasks</a>
+                        </li>
+                        <li>
+                            <a href="#!/myCards">Cards</a>
+                        </li>
+                        <hr/>
+                        <li>
+                            <a href="#!/account">Account</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- Generated nav stuff ended-->
+
+    <!-- Testing code bits -->
+    <!-- 
+            <div class="container container-fluid">
+                <label> tests:
+                    <input ng-model="yay" type="text"> {{5 +5}} {{ yay}}
+                </label>
+            </div>
+        -->
+    <!-- <div class="container container-fluid">
+        <div 
+            class="btn btn-default" 
+            ng-repeat="items in 'something'.split('')" 
+            ng-click="ev = $event">
+
+            {{$index}}. {{items}}
+            {{ev.pageX}}
+        </div>
+    </div> 
+    -->
+    <!-- testing the controllers -->
+    <!-- <span ng-controller="testCtrl as demo">
+    Client ID: {{demo.clientId}}
+</span> 
+status: passed -->
+    <!--
+            <div class="container container-fluid">
+                <h4>Content by Route</h4>
+                test: {{3+3}} {{ yay }}
+             -->
+    <!-- Testing code bits ended-->
+
+    <!-- This is where the router will inject the html based on the URL -->
+    <div class="container container-fluid">
+        <ng-view></ng-view>
+    </div>
+
+
+    <div class="alert alert-info text-center">
+        Footer name: name: {{name}} yay: {{yay}} test: {{6+68}}
+    </div>
+
+</body>

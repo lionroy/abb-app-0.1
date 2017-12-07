@@ -1,0 +1,73 @@
+[
+{
+    "username": "Donald",
+    "email": "donaldduck@acme.co",
+    "fname": "donald",
+    "lname": "duck",
+    "selected": "false",
+    "id": 123456789,
+    "passport": 888,
+    "role": ["Manager", "Administrator"],
+    "hasRole": "true",
+    "isActive": "false"
+},
+{
+    "username": "Mickey",
+    "email": "mickey@acme.co",
+    "fname": "mickey",
+    "lname": "mouse",
+    "selected": "false",
+    "id": 123123123,
+    "passport": 888,
+    "role": ["Manager", "Administrator"],
+    "hasRole": "true",
+    "isActive": "false"
+},
+{
+    "username": "Bugs",
+    "email": "bugs@acme.co",
+    "fname": "bugs",
+    "lname": "bunny",
+    "selected": "false",
+    "id": 123412341,
+    "passport": 888,
+    "role": ["Manager", "Administrator"],
+    "hasRole": "true",
+    "isActive": "false"
+},
+{
+    "username": "Superman",
+    "email": "clark@dc.co",
+    "fname": "clark",
+    "lname": "kent",
+    "selected": "true",
+    "id": 999999999,
+    "passport": 888,
+    "role": ["Manager", "Administrator"],
+    "hasRole": "true",
+    "isActive": "false"
+},
+{
+    "username": "Spiderman",
+    "email": "spidey@dc.co",
+    "fname": "peter",
+    "lname": "parker",
+    "selected": "false",
+    "id": 345678912,
+    "passport": 888,
+    "role": ["Manager", "Administrator"],
+    "hasRole": "true",
+    "isActive": "false"
+},
+{
+    "username": "WonderWoman",
+    "email": "galgadot@wonderwoman.co",
+    "fname": "gal",
+    "lname": "gadot",
+    "selected": "false",
+    "id": 456789123,
+    "passport": 888,
+    "role": ["Manager", "Administrator"],
+    "hasRole": "true",
+    "isActive": "false"
+}]

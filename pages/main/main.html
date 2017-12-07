@@ -1,0 +1,191 @@
+<!-- <!DOCTYPE html> -->
+<!-- testing the controllers -->
+<!-- main: angucheck {{ 9 + 9 }} -->
+<!-- <span ng-controller="testCtrl as demo">
+    Client ID: {{demo.clientId}}
+</span> -->
+
+<h1>Main Menu</h1>
+<!-- junk stuff ? -->
+
+<div class="well">
+    ok well..
+    <div class="well cardGallery" style="margin: 0 auto;">
+        <div class="row">
+
+
+            <div class="well cardSelection" style="border: 1px solid black; margin: 1em;">
+
+                <div class="well itemCard  col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <h1 style="font: impact; font-size: 4em; color:black;">A.B.C.</h1>
+                    Tagline:
+                    <strong>
+                        <b>A</b>lways
+                        <b>B</b>e
+                        <b>C</b>losing</strong>
+                    <br/> Author:
+                    <strong>David Mammet</strong>
+                    <hr>
+                    <p class="alt_tag" ng-show="true">#1:
+                        <strong>
+                            <b>A</b>sk
+                            <b>B</b>efore
+                            <b>C</b>oding
+                        </strong>
+                    </p>
+                    <p class="alt_tag" ng-show="true">#2:
+                        <strong>
+                            <b>A</b>rt
+                            <b>B</b>ecomes
+                            <b>C</b>reativity
+                        </strong>
+                    </p>
+                    <p class="alt_tag" ng-show="true">#3:
+                        <strong>
+                            <b>A</b>cheive
+                            <b>B</b>alance
+                            <b>C</b>reation
+                        </strong>
+                    </p>
+                    <hr>
+                    <p class="card_info_p">
+                        <br/> Link: GGR
+                        <a href="http://www.imdb.com/title/tt0104348/">Glangarry Glen Ross</a>
+
+                        <p ng-hide="true">Description: Information bits <wbr> have a certain charm with the capacity<wbr> to lure some people
+                            mind into buying<wbr> what other folks deem unneccesary goods.</p>
+                        <p ng-hide="true">The second paragraph is commonly used <wbr> as the fisheman's angle and line to reel in the fish.</p>
+                    </p>
+                </div>
+                <div class="well itemCard  col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <h1 style="font: impact; font-size: 4em; color:black;">F.B.I.</h1>
+                    Tagline:
+                    <strong>
+                        <b>F</b>ederal
+                        <b>B</b>ureau
+                        <b>I</b>ntelligence</strong>
+                    <br/> Authority:
+                    <strong>Federal Bureau of Intelligence</strong>
+                    <hr>
+                    <p class="alt_tag" ng-show="true">#1:
+                        <strong>
+                                <b>F</b>antastic
+                                <b>B</b>eyond
+                                <b>I</b>magination</strong>
+                        </strong>
+                    </p>
+                    <p class="alt_tag" ng-show="true">#2:
+                        <strong>
+                                <b>F</b>un
+                                <b>B</b>eing
+                                <b>I</b>diots!</strong>
+                        </strong>
+                    </p>
+                    <p class="alt_tag" ng-show="true">#3:
+                        <strong>
+                                <b>F</b>orever
+                                <b>B</b>e
+                                <b>I</b>nspiring</strong>
+                        </strong>
+                    </p>
+                    <hr>
+                    <p class="card_info_p">
+                        <br/> Link: FBI
+                        <a href="http://www.wikipedia.org/F.B.I./">Federal Bureau of Intelligence</a>
+
+                        <p ng-hide="true">Description: Information bits <wbr> have a certain charm with the capacity<wbr> to lure some people
+                            mind into buying<wbr> what other folks deem unneccesary goods.</p>
+                        <p ng-hide="true">The second paragraph is commonly used <wbr> as the fisheman's angle and line to reel in the fish.</p>
+                    </p>
+                </div>
+                <div class="well itemCard  col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <h1 style="font: impact; font-size: 4em; color:black;">A.B.C.</h1>
+                    Tagline:
+                    <strong>
+                        <b>A</b>lways
+                        <b>B</b>e
+                        <b>C</b>losing</strong>
+                    <br/> Author:
+                    <strong>David Mammet</strong>
+                    <hr>
+                    <p class="alt_tag" ng-show="true">#1:
+                        <strong>
+                            <b>A</b>sk
+                            <b>B</b>efore
+                            <b>C</b>oding
+                        </strong>
+                    </p>
+                    <p class="alt_tag" ng-show="true">#2:
+                        <strong>
+                            <b>A</b>rt
+                            <b>B</b>ecomes
+                            <b>C</b>reativity
+                        </strong>
+                    </p>
+                    <p class="alt_tag" ng-show="true">#3:
+                        <strong>
+                            <b>A</b>cheive
+                            <b>B</b>alance
+                            <b>C</b>reation
+                        </strong>
+                    </p>
+                    <hr>
+                    <p class="card_info_p">
+                        <br/> Link: GGR
+                        <a href="http://www.imdb.com/title/tt0104348/">Glangarry Glen Ross</a>
+
+                        <p ng-hide="true">Description: Information bits <wbr> have a certain charm with the capacity<wbr> to lure some people
+                            mind into buying<wbr> what other folks deem unneccesary goods.</p>
+                        <p ng-hide="true">The second paragraph is commonly used <wbr> as the fisheman's angle and line to reel in the fish.</p>
+                    </p>
+                </div>
+                <div class="well itemCard  col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <h1 style="font: impact; font-size: 4em; color:black;">F.B.I.</h1>
+                    Tagline:
+                    <strong>
+                        <b>F</b>ederal
+                        <b>B</b>ureau
+                        <b>I</b>ntelligence</strong>
+                    <br/> Authority:
+                    <strong>Federal Bureau of Intelligence</strong>
+                    <hr>
+                    <p class="alt_tag" ng-show="true">#1:
+                        <strong>
+                                <b>F</b>antastic
+                                <b>B</b>eyond
+                                <b>I</b>magination</strong>
+                        </strong>
+                    </p>
+                    <p class="alt_tag" ng-show="true">#2:
+                        <strong>
+                                <b>F</b>un
+                                <b>B</b>eing
+                                <b>I</b>diots!</strong>
+                        </strong>
+                    </p>
+                    <p class="alt_tag" ng-show="true">#3:
+                        <strong>
+                                <b>F</b>orever
+                                <b>B</b>e
+                                <b>I</b>nspiring</strong>
+                        </strong>
+                    </p>
+                    <hr>
+                    <p class="card_info_p">
+                        <br/> Link: FBI
+                        <a href="http://www.wikipedia.org/F.B.I./">Federal Bureau of Intelligence</a>
+
+                        <p ng-hide="true">Description: Information bits <wbr> have a certain charm with the capacity<wbr> to lure some people
+                            mind into buying<wbr> what other folks deem unneccesary goods.</p>
+                        <p ng-hide="true">The second paragraph is commonly used <wbr> as the fisheman's angle and line to reel in the fish.</p>
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>

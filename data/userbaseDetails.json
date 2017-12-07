@@ -1,0 +1,110 @@
+[
+    {
+        "username": "Donald",
+        "email": "donaldduck@acme.co",
+        "details": {
+            "status": "",
+            "fname": "donald",
+            "lname": "duck",
+            "selected": "false",
+            "id": 123456789,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    },
+    {
+        "username": "Mickey",
+        "email": "mickey@acme.co",
+        "details": {
+            "status": "",
+            "fname": "mickey",
+            "lname": "mouse",
+            "selected": "false",
+            "id": 123123123,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    },
+    {
+        "username": "Bugs",
+        "email": "bugs@acme.co",
+        "details": {
+            "status": "",
+            "fname": "bugs",
+            "lname": "bunny",
+            "selected": "false",
+            "id": 123412341,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    },
+    {
+        "username": "Superman",
+        "email": "clark@dc.co",
+        "details": {
+            "status": "",
+            "fname": "clark",
+            "lname": "kent",
+            "selected": "true",
+            "id": 999999999,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    },
+    {
+        "username": "Spiderman",
+        "email": "spidey@dc.co",
+        "details": {
+            "status": "",
+            "fname": "peter",
+            "lname": "parker",
+            "selected": "false",
+            "id": 345678912,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    },
+    {
+        "username": "WonderWoman",
+        "email": "galgadot@wonderwoman.co",
+        "details": {
+            "status": "",
+            "fname": "gal",
+            "lname": "gadot",
+            "selected": "false",
+            "id": 456789123,
+            "passport": 888,
+            "role": [
+                "Manager",
+                "Administrator"
+            ],
+            "hasRole": "true",
+            "isActive": "false"
+        }
+    }
+]

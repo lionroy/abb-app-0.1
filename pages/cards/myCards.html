@@ -1,0 +1,74 @@
+<h1>My Card Generator</h1>
+<!-- <input type="text" ng-model="test"/>
+<hr> {{test}} -->
+<br/>
+
+<div class="row">
+    <div class="myCard col-md-4">
+        <!-- <div class="mint"> -->
+        <div class="container-fluid">
+            <!-- <div class="input-group"> -->
+            <div class="input-group">
+                <input type="text" class="form-control" ng-model="coin" id="exampleInputAmount" placeholder="coin your term" />
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default">Go!</button>
+                </span>
+            </div>
+            <br/>
+        </div>
+
+        <!-- prob 1 <br/> -->
+        <!-- <prob1></prob1> -->
+        <div class="container col-md-4" style="float: right;">
+            <span ng-repeat="item in coin.split(' ') track by $index">
+                <svg width="50" height="50">
+                    <rect width="55" height="55" style="fill:rgb(35,125,190);stroke-width:3;stroke:rgb(0,0,0)" />
+                    <text x=".95em" y="1.6em" font-family="impact" font-size="1.3em" fill="white">
+                        {{item.substring(0,1) + ' ' | uppercase}}</text>
+
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </span>
+        </div>
+
+        <!-- prob 2 <br/> -->
+        <prob2></prob2>
+        <!-- prob 6 <br/> -->
+        <prob6></prob6>
+
+        <!-- prob 3  <br/> -->
+        <prob3></prob3>
+
+
+        <!-- prob 4 <br/> -->
+        <div class="container flash">
+
+            <!-- <h4>
+                {{coin | uppercase}}
+            </h4> -->
+        </div>
+        <!-- prob 5 <br/> -->
+        <!-- <div class="container flash"> -->
+
+        <!-- </div> -->
+        <!-- </div> -->
+
+        <hr>
+        <!-- prob 5 <br/> -->
+        <div class="container flash">
+            <span ng-repeat="item in coin.split(' ') track by $index">
+                <svg width="90" height="90">
+                    <circle cx="40" cy="40" r="35" stroke="lightgreen" stroke-width="4" fill="black" />
+                    <text x=".75em" y="1.3em" font-family="impact" font-size="3em" fill="white">
+                        {{item.substring(0,1) + ' ' | uppercase}}</text>
+
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </span>
+        </div>
+        <!-- <span class="inset" ng-repeat="item in coin.split(' ') track by $index">{{item.substring(0,1) + '.' | uppercase}}</span> -->
+
+        <!-- <img src="./images/img_avatar.png" alt="Avatar" style="width:100%"> -->
+    </div>
+    <br/>
+</div>

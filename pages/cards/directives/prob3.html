@@ -1,0 +1,9 @@
+<div class="p3 container col-sm-6 flash">
+
+    <p>
+        <span ng-repeat="item in coin.split(' ') track by $index">
+            {{item.substring(0,1) + '.' | uppercase}} 
+        </span> | {{coin}}
+    </p>
+    <!-- {{coin.substring(0,1) | uppercase}}  -->
+</div>
